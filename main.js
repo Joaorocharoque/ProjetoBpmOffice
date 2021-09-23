@@ -19,8 +19,9 @@ function criaLinha(usuario){
 
 function main(){
   let data = fazGet("https://api.github.com/users/octocat")
+  console.log(fazGet("https://api.github.com/users/octocat"))
   let usuarios = JSON.parse(data);
-  let tabela = document.getElementById("tabela")
+  let tabela = document.getElementById("tabela") 
   usuarios.array.forEach(element => {
       let linha = criaLinha(element);
       tabela.appendChild(linha);

@@ -21,16 +21,12 @@
                     </a>
                 </li>
     
-                <li><a href="tabela.html">Tabela</a></li>
-                
-                <li><a href="#">Quem Somos</a></li>
-                
-                <li><a href="#">Contato</a></li>
+                <li><a href="tabela.html">Tabela</a></li>   
                 
             </ul>
         </nav>
-<br><br><br><br><br><br>
-        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+            <br><br><br><br>
+
         <div>
             <h1 id="titulo">Formulário de Cadastro</h1>
             <br>
@@ -42,7 +38,7 @@
         <form class="form" action="register.jsp" method="POST">
 
             <fieldset class="grupo">
-                <!-- Campo do Nome Completo -->
+           
                 <div class="campo">
                     <label for="nome"><strong>Nome Completo:</strong></label>
                     <input type="text" name="nome" id="nome" required>
@@ -50,7 +46,7 @@
             
                 <br>
             
-                <!-- Campo do Data -->
+               
                 <div class="campo">
                     <label for="date"><strong>Data Nascimento:</strong></label>
                     <input type="date" name="date" id="date " required>
@@ -71,7 +67,7 @@
             </div>
 
             <br>
-            <!-- Campo de email com-->
+
             <div class="campo">
                 <label for="email"><strong>Email:</strong></label>
                 <input type="email" name="email" id="email" required>
@@ -135,25 +131,30 @@
                 <label for="experiencia"><strong>Descricão: </strong></label>
                 <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
             </div>
+
             <br>
-            <!-- Botão para enviar o formulário -->
+
+            <!-- input para enviar o formulário -->
             <div align="center">
             <input class="botao" id="button" type="submit">       
             </div>
+
         </form>
+
         <footer>
             <p>© Copyright 2000-2021 João Roque<br>
-          </footer>
+        </footer>
+
         <script>
             document.querySelector('form.form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const formData = new FormData(this);
-  const entires = formData.entries();
+            e.preventDefault();
+            const formData = new FormData(this);
+            const entires = formData.entries();
 
-  for (var input of entires) {
-    console.log(input[0] + ': ' + input[1]);
-  }
-});
+            for (var input of entires) {
+                console.log(input[0] + ': ' + input[1]);
+            }
+            });
         </script>
 
     </body>
