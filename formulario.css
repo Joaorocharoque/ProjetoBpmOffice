@@ -34,7 +34,7 @@
 /* Elementos de tag <fieldset>*/
 fieldset {
     border: 0;
-    margin-left: 36%;
+    margin-left: 16%;
 
 }
 
@@ -70,7 +70,7 @@ input, select, textarea, button {
 /* Elementos de classe "campo" */
 .campo {
     margin-bottom: 1em;
-    margin-left: 16%;
+    margin-left: 15%;
 
 }
 
@@ -86,17 +86,18 @@ input, select, textarea, button {
 fieldset.grupo .campo {
     float:  left;
     margin-right: 1em;
-    margin-left: 10%;
+    margin-left: 5%;
 
 }
 
 /* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
-    padding: 0.2em;
+.campo input[type="text"], .campo input[type="email"], 
+ .campo input[type="date"], .campo input[type="number"], .campo select, .campo textarea {
+    padding: 0.1em;
     border: 1px solid #59429d;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
-    margin-left: 36%;
+    margin-left: 16%;
 
 }
 
@@ -120,10 +121,10 @@ fieldset.grupo .campo {
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position: absolute;
-    top: 160%;
-    left: 3 0%;
-    margin-right: -50%;
+    position: center;
+    top: 200%;
+    left: 8 2%;
+    margin-right: 20%;
     transform: translate(-50%, -50%)
 }
 
@@ -155,7 +156,7 @@ fieldset.grupo .campo {
 
 #menu-h ul li a {
     color: #FFF;
-    padding: 20px;
+    padding: 50px;
     display: inline-block;
     text-decoration: none;
     transition: background .4s;
@@ -164,3 +165,10 @@ fieldset.grupo .campo {
 #menu-h ul li a:hover {
     background-color: rgb(24, 139, 233);
 }       
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
